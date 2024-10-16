@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageApp.MainActivity">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/etName"
+        android:text="@string/escribe_tu_nombre"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="300dp"
+        android:text="Hola!"
+        android:textSize="30sp"
+        android:textColor="@color/purple"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textName"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        android:textAlignment="textStart"
+        android:background="@color/pale_violet_red"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Write message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonSend"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
