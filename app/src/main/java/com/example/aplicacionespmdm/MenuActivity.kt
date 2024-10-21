@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.aplicacionespmdm.BoardGamesApp.BoardGamesActivity
 import com.example.aplicacionespmdm.IMCapp.IMCactivity
 import com.example.aplicacionespmdm.MessageApp.HelloActivity
 import com.example.aplicacionespmdm.MessageApp.MainActivity
@@ -20,10 +21,12 @@ class MenuActivity : AppCompatActivity() {
         var btnMessageApp = findViewById<Button>(R.id.btnMessageApp)
         var btnHelloApp = findViewById<Button>(R.id.btnHelloApp)
         var btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
+        var btnBoardGamesApp = findViewById<Button>(R.id.btnBoardGamesApp)
 
         btnMessageApp.setOnClickListener{navigateToMessageApp()}
         btnHelloApp.setOnClickListener{navigateToHelloApp()}
         btnIMCApp.setOnClickListener{navigateToIMCApp()}
+        btnBoardGamesApp.setOnClickListener{navigateToBoardGamesApp()}
 
 
 
@@ -45,6 +48,11 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navigateToIMCApp(){
         var intent = Intent(this, IMCactivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToBoardGamesApp(){
+        var intent = Intent(this, BoardGamesActivity::class.java)
         startActivity(intent)
     }
 }

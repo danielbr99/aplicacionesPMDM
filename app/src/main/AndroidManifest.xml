@@ -12,33 +12,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicacionesPMDM"
         tools:targetApi="31">
+
         <activity
             android:name=".MenuActivity"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".MessageApp.MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MessageApp.HelloActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".IMCapp.IMCactivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".IMCapp.ResultActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
+        <activity
+            android:name=".BoardGamesApp.BoardGamesActivity"
+            android:theme="@style/Theme.BoardgamesApp"
+            android:exported="true" />
     </application>
 
 </manifest>
