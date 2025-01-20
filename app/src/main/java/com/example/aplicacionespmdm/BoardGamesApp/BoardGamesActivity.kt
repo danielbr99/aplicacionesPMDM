@@ -31,13 +31,13 @@ class BoardGamesActivity : AppCompatActivity() {
         GameCategory.Legacy
     )
     private val games = mutableListOf(
-        Game("Frostpunk", GameCategory.Cooperative),
-        Game("Frostpunk", GameCategory.Deckbuilding),
-        Game("Frostpunk", GameCategory.Euro),
-        Game("Frostpunk", GameCategory.LCG),
-        Game("Frostpunk", GameCategory.Legacy),
-        Game("Frostpunk", GameCategory.Cooperative),
-        Game("Frostpunk", GameCategory.Deckbuilding),
+        Game("Frostpunk1", GameCategory.Cooperative),
+        Game("Frostpunk2", GameCategory.Deckbuilding),
+        Game("Frostpunk3", GameCategory.Euro),
+        Game("Frostpunk4", GameCategory.LCG),
+        Game("Frostpunk5", GameCategory.Legacy),
+        Game("Frostpunk6", GameCategory.Cooperative),
+        Game("Frostpunk7", GameCategory.Deckbuilding),
     )
 
 

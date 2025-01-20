@@ -11,6 +11,7 @@ import com.example.aplicacionespmdm.BoardGamesApp.BoardGamesActivity
 import com.example.aplicacionespmdm.IMCapp.IMCactivity
 import com.example.aplicacionespmdm.MessageApp.HelloActivity
 import com.example.aplicacionespmdm.MessageApp.MainActivity
+import com.example.aplicacionespmdm.SuperheroApp.SuperheroListActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,11 +23,13 @@ class MenuActivity : AppCompatActivity() {
         var btnHelloApp = findViewById<Button>(R.id.btnHelloApp)
         var btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
         var btnBoardGamesApp = findViewById<Button>(R.id.btnBoardGamesApp)
+        var btnSuperheroApp = findViewById<Button>(R.id.btnSuperheroApp)
 
         btnMessageApp.setOnClickListener{navigateToMessageApp()}
         btnHelloApp.setOnClickListener{navigateToHelloApp()}
         btnIMCApp.setOnClickListener{navigateToIMCApp()}
         btnBoardGamesApp.setOnClickListener{navigateToBoardGamesApp()}
+        btnSuperheroApp.setOnClickListener{navigateToSuperheroApp()}
 
 
 
@@ -53,6 +56,11 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navigateToBoardGamesApp(){
         var intent = Intent(this, BoardGamesActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToSuperheroApp(){
+        var intent = Intent(this, SuperheroListActivity::class.java)
         startActivity(intent)
     }
 }
